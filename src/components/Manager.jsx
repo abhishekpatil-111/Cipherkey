@@ -125,14 +125,12 @@ const Manager = () => {
                 pauseOnHover
                 theme="dark"
             />
-            <div className="mycontainer pt-0 pb-5">
-                {/* Your other JSX content */}
-            </div>
-
+            <ToastContainer/>
+           
             {/* Background from - https://bg.ibelick.com/ */}
             <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
 
-            <div className="p-2 md:mycontainer " >
+            <div className="p-2 md:mycontainer min-h-[82.5vh]" >
                 <h1 className='text-4xl font-bold text-center'>
                     <span className="text-green-700">&lt;</span>
                     <img className="inline-block h-8 w-8" src="/icons/key.png" alt="Key Icon" />
@@ -163,7 +161,7 @@ const Manager = () => {
                     <h2 className='font-bold text-2xl text-center py-4'>Your Passwords</h2>
                     {passwordArray.length === 0 && <div className='text-center'>No Passwords to Show</div>}
                     {passwordArray.length !== 0 &&
-                        <table className="table-auto w-full rounded-md overflow-hidden mb-8 ">
+                        <table className="table-auto w-full rounded-md overflow-hidden mb-10">
                             <thead className='bg-green-800 text-white'>
                                 <tr>
                                     <th className='py-2'>Site</th>
