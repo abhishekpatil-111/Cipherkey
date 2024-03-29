@@ -141,7 +141,7 @@ const Manager = () => {
                     <span className="text-green-700">&gt;</span>
                 </h1>
                 <p className='text-green-600 text-lg text-center'>Your own password manager</p>
-                <p className='font-bold text-center text-gray-700 '>keep your Passwords Safe withc here</p>
+                <p className='font-bold text-center text-gray-700 '>Manage your Passwords safely here</p>
 
                 <div className="flex flex-col p-4 text-black gap-8 items-center">
                     <input value={form.site} onChange={handleChange} placeholder='Enter Website URL' className='rounded-full border border-green-500 w-full p-4 py-1' type="text" name="site" id="site" />
