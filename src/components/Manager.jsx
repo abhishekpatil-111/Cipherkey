@@ -101,7 +101,7 @@ const Manager = () => {
 
     };
     const truncateText = (text) => {
-        return text.length > 10 ? text.slice(0, 5) + '...' : text;
+        return text.length > 4 ? text.slice(0, 4) + '...' : text;
     };
 
 
@@ -163,7 +163,7 @@ const Manager = () => {
                     <h2 className='font-bold text-2xl text-center py-4'>Your Passwords</h2>
                     {passwordArray.length === 0 && <div className='text-center'>No Passwords to Show</div>}
                     {passwordArray.length !== 0 &&
-                        <table className="table-auto w-full rounded-md overflow-hidden mb-6 ">
+                        <table className="table-auto w-full rounded-md overflow-hidden mb-8 ">
                             <thead className='bg-green-800 text-white'>
                                 <tr>
                                     <th className='py-2'>Site</th>
