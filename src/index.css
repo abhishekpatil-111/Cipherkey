@@ -8,3 +8,25 @@
       @apply container container px-40 py-16 mx-auto;
     }
   }
+
+
+  #online{
+    background-color: rgb(4, 255, 0);
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+  }
+  #offline{
+    background-color: rgb(122, 124, 122);
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+  }

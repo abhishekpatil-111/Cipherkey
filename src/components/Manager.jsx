@@ -104,6 +104,8 @@ const Manager = () => {
         return text.length > 4 ? text.slice(0, 4) + '...' : text;
     };
 
+    
+
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -125,12 +127,12 @@ const Manager = () => {
                 pauseOnHover
                 theme="dark"
             />
-            <ToastContainer/>
-           
+            <ToastContainer />
+
             {/* Background from - https://bg.ibelick.com/ */}
             <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
 
-            <div className="p-2 md:mycontainer min-h-[82.5vh]" >
+            <div className="p-6 md:mycontainer  md:min-h-[77.9vh] min-h-[83.5vh] " >
                 <h1 className='text-4xl font-bold text-center'>
                     <span className="text-green-700">&lt;</span>
                     <img className="inline-block h-8 w-8" src="/icons/key.png" alt="Key Icon" />
@@ -140,6 +142,8 @@ const Manager = () => {
                 </h1>
                 <p className='text-green-600 text-lg text-center'>Your own password manager</p>
                 <p className='font-bold text-center text-gray-700 '>Manage your Passwords safely here</p>
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.90/build/spline-viewer.js"></script>
+
 
                 <div className="flex flex-col p-4 text-black gap-5 items-center">
                     <input value={form.site} onChange={handleChange} placeholder='Enter Website URL' className='rounded-full border border-green-500 w-full p-4 py-1' type="text" name="site" id="site" />
