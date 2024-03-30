@@ -132,7 +132,7 @@ const Manager = () => {
             {/* Background from - https://bg.ibelick.com/ */}
             <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
 
-            <div className="p-6 md:mycontainer  md:min-h-[77.9vh] min-h-[83.5vh] " >
+            <div className="p-6 md:mycontainer  md:min-h-[77.9vh] min-h-[150vh] " >
                 <h1 className='text-4xl font-bold text-center'>
                     <span className="text-green-700">&lt;</span>
                     <img className="inline-block h-8 w-8" src="/icons/key.png" alt="Key Icon" />
@@ -141,7 +141,7 @@ const Manager = () => {
                     <span className="text-green-700">&gt;</span>
                 </h1>
                 <p className='text-green-600 text-lg text-center'>Your own password manager</p>
-                <p className='font-bold text-center text-gray-700 '>Manage your Passwords safely here</p>
+                {/* <p className='font-bold text-center text-gray-700 '>Manage your Passwords safely here</p> */}
                 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.90/build/spline-viewer.js"></script>
 
 
